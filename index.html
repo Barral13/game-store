@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="./styles/output.css">
+   <title>Barral Games</title>
+</head>
+
+<body>
+
+   <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+
+      <div class="w-full h-full flex flex-col justify-center items-center">
+
+         <img src="./assets/logo.jpg" alt="Logo Barral Games"
+            class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200 cursor-pointer" />
+
+         <h1 class="text-5xl font-bold mt-4 mb-2 text-white">
+            Barral Games
+         </h1>
+
+         <span class="text-orange-400 font-bold">Rua Moisés Marx, São Paulo - SP</span>
+
+         <div class="bg-fuchsia-600 px-4 py-1 rounded-lg mt-5 hover:scale-105 cursor-pointer duration-200 ease-in-out"
+            id="date-span">
+            <span class="text-white font-medium">Segunda á Sabado, das 8:00 as 20:00</span>
+         </div>
+
+      </div>
+
+   </header>
+
+   <H2 class=" text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+      CONHEÇA NOSSOS PRODUTOS
+   </H2>
+
+   <div class="mx-auto max-w-7xl px-2 my-2">
+      <h2 class="font-bold text-2xl">Lançamentos</h2>
+   </div>
+
+   <div id="menu">
+
+      <main class="grid grid-cols-1 md:grid-cols-2 gap-10 mx-auto max-w-7xl px-2 mb-16">
+
+         <div class="flex gap-2">
+            <img src="./assets/PS5.png" alt="PlayStation 5"
+               class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+            <div>
+               <p class="font-bold text-lg">PlayStation 5 - limited edition</p>
+               <p class="text-base font-medium">O PS5 é a mais recente geração de consoles da Sony,
+                  oferecendo gráficos de ponta, jogabilidade imersiva e uma gama de recursos.
+               </p>
+
+               <div class="flex items-center gap-2 justify-between mt-3">
+                  <p class="font-bold text-lg">R$ 4199.90</p>
+                  <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="PlayStation 5"
+                     data-price="4199.90">
+                     <i class="fa fa-cart-plus text-lg text-orange-400"></i>
+                  </button>
+               </div>
+            </div>
+         </div>
+
+         <div class="flex gap-2">
+            <img src="./assets/PS5-w.jpg" alt="PlayStation 5 - limited edition"
+               class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+            <div>
+               <p class="font-bold text-lg">PlayStation 5</p>
+               <p class="text-base font-medium">O design branco do PS5 apresenta um visual futurista e elegante,
+                  destacando-se entre os consoles de videogame.</p>
+
+               <div class="flex items-center gap-2 justify-between mt-3">
+                  <p class="font-bold text-lg">3899.90</p>
+                  <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="PlayStation 5 - limited edition"
+                     data-price="3899.90">
+                     <i class="fa fa-cart-plus text-lg text-orange-400"></i>
+                  </button>
+               </div>
+            </div>
+         </div>
+
+         <div class="flex gap-2">
+            <img src="./assets/X-box-x.jpg" alt="Xbox Series X"
+               class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+            <div>
+               <p class="font-bold text-lg">Xbox Series X</p>
+               <p class="text-base font-medium">O lançamento do novo Xbox chega trazendo tecnologia inovadora, jogos
+                  exclusivos e recursos incriveis.</p>
+
+               <div class="flex items-center gap-2 justify-between mt-3">
+                  <p class="font-bold text-lg">R$ 3802.00</p>
+                  <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Xbox Series X"
+                     data-price="3802.00">
+                     <i class="fa fa-cart-plus text-lg text-orange-400"></i>
+                  </button>
+               </div>
+            </div>
+         </div>
+
+         <div class="flex gap-2">
+            <img src="./assets/X-box-w.jpg" alt="Xbox Series S"
+               class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+            <div>
+               <p class="font-bold text-lg">Xbox Series S</p>
+               <p class="text-base font-medium">O Xbox Series S é uma versão mais acessível, oferecendo desempenho
+                  sólido, suporte a jogos em 1440p.</p>
+
+               <div class="flex items-center gap-2 justify-between mt-3">
+                  <p class="font-bold text-lg">R$ 2195.00</p>
+                  <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Xbox Series S"
+                     data-price="2195.00">
+                     <i class="fa fa-cart-plus text-lg text-orange-400"></i>
+                  </button>
+               </div>
+            </div>
+         </div>
+
+      </main>
+      <hr>
+      <div class="mx-auto max-w-7xl px-2 my-2">
+         <h2 class="font-bold text-2xl">Consoles retrô</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-7 mx-auto max-w-7xl px-2 mb-16" id="menu">
+
+         <div class="w-full flex gap-2">
+            <img src="./assets/PS2-retro.jpg" alt="PlayStation 2"
+               class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+            <div class="w-full">
+               <p class="font-bold text-lg">PlayStation 2</p>
+               <p class="text-base font-medium">O PlayStation 2 em 2000, foi um marco na história dos
+                  videogames, tornando-se o console mais vendido de todos os tempos.</p>
+
+               <div class="flex items-center gap-2 justify-between mt-3">
+                  <p class="font-bold text-lg">R$ 413.90</p>
+                  <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="PlayStation 2"
+                     data-price="413.90">
+                     <i class="fa fa-cart-plus text-lg text-orange-400"></i>
+                  </button>
+               </div>
+            </div>
+         </div>
+
+         <div class="w-full flex gap-2">
+            <img src="./assets/X-BOX-360-retro.jpg" alt="Xbox 360"
+               class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+            <div class="w-full">
+               <p class="font-bold text-lg">Xbox 360</p>
+               <p class="text-base font-medium">
+                  O Xbox 360 oferece gráficos avançados, conectividade online
+                  robusta e o Xbox Kinect para jogabilidade sem controle.</p>
+
+               <div class="flex items-center gap-2 justify-between mt-3">
+                  <p class="font-bold text-lg">R$ 985.80</p>
+                  <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Xbox 360" data-price="589.80">
+                     <i class="fa fa-cart-plus text-lg text-orange-400"></i>
+                  </button>
+               </div>
+            </div>
+         </div>
+
+         <div class="w-full flex gap-2">
+            <img src="./assets/Nintendo-Wii-retro.jpg" alt="Nintendo Wii"
+               class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+            <div class="w-full">
+               <p class="font-bold text-lg">Nintendo Wii</p>
+               <p class="text-base font-medium">O Nintendo Wii revolucionou a indústria ao oferecer uma jogabilidade
+                  única e
+                  acessível para jogadores de todas as idades.</p>
+
+               <div class="flex items-center gap-2 justify-between mt-3">
+                  <p class="font-bold text-lg">R$ 344.40</p>
+                  <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Nintendo Wii" data-price="344.40">
+                     <i class="fa fa-cart-plus text-lg text-orange-400"></i>
+                  </button>
+               </div>
+            </div>
+         </div>
+
+      </div>
+
+      <div id="cart-modal"
+         class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden">
+
+         <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+
+            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+            <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+
+            <p class="font-bold mt-4">Endereço de entrega:</p>
+            <input type="text" placeholder="Informe seu endereço completo..." id="address"
+               class="w-full border-2 p-1 rounded my-2" />
+
+            <p class="text-red-700 font-bold hidden" id="address-warn">Informe seu endereço completo!</p>
+
+            <div class="flex items-center justify-between mt-5 w-full">
+               <button id="close-modal-btn" class="font-bold bg-black text-white px-4 py-1 rounded">Fechar</button>
+               <button id="checkout-btn" class="font-bold bg-fuchsia-600 text-white px-4 py-1 rounded">Finalizar
+                  pedido</button>
+            </div>
+         </div>
+      </div>
+
+      <footer class="w-full bg-black py-3 fixed bottom-0 z-40 flex items-center justify-center">
+         <button class="flex items-center gap-2 text-fuchsia-600  font-bold" id="cart-btn">
+            (<span id="cart-count">0</span>)
+            Acesse o carrinho
+            <i class="fa fa-cart-plus text-lg text-orange-400"></i>
+         </button>
+      </footer>
+
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+      <script src="./script.js"></script>
+</body>
+
+</html>
